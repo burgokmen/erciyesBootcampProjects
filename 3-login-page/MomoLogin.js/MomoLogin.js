@@ -1,8 +1,15 @@
-import React from 'react'
+import React from "react";
 import Constants from "expo-constants";
-import {FontAwesome5} from "@expo/vector-icons";
-import { SafeAreaView, Text, TextInput, TouchableOpacity, StyleSheet, View } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
+import { FontAwesome5 } from "@expo/vector-icons";
+import {
+  SafeAreaView,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  StyleSheet,
+  View,
+} from "react-native";
+import { StatusBar } from "expo-status-bar";
 
 export default function MomoLogin() {
   return (
@@ -50,67 +57,67 @@ export default function MomoLogin() {
 }
 
 const TEXT: TextStyle = {
-    color: "#fff",
+  color: "#fff",
+  textAlign: "center",
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#b0006d",
+    paddingTop: Constants.statusBarHeight,
+  },
+  content: {
+    paddingHorizontal: 30,
+  },
+  textWrapper: {
+    marginTop: 60,
+    marginBottom: 30,
+  },
+  hiText: {
+    ...TEXT,
+    fontSize: 20,
+    lineHeight: 50,
+    fontWeight: "bold",
+  },
+  userText: {
+    ...TEXT,
+    fontSize: 16,
+    lineHeight: 30,
+  },
+  form: {
+    marginBottom: 30,
+  },
+  iconLock: {
+    color: "#929292",
+    position: "absolute",
+    fontSize: 16,
+    top: 22,
+    left: 22,
+    zIndex: 10,
+  },
+  inputPassword: {
+    height: 60,
+    borderRadius: 30,
+    paddingHorizontal: 30,
+    fontSize: 20,
+    color: "#929292",
+    backgroundColor: "#fff",
     textAlign: "center",
-  };
-   
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: "#b0006d",
-      paddingTop: Constants.statusBarHeight,
-    },
-    content: {
-      paddingHorizontal: 30,
-    },
-    textWrapper: {
-      marginTop: 60,
-      marginBottom: 30,
-    },
-    hiText: {
-      ...TEXT,
-      fontSize: 20,
-      lineHeight: 50,
-      fontWeight: "bold",
-    },
-    userText: {
-      ...TEXT,
-      fontSize: 16,
-      lineHeight: 30,
-    },
-    form: {
-      marginBottom: 30,
-    },
-    iconLock: {
-      color: "#929292",
-      position: "absolute",
-      fontSize: 16,
-      top: 22,
-      left: 22,
-      zIndex: 10,
-    },
-    inputPassword: {
-      height: 60,
-      borderRadius: 30,
-      paddingHorizontal: 30,
-      fontSize: 20,
-      color: "#929292",
-      backgroundColor: "#fff",
-      textAlign: "center",
-      textAlignVertical: "center",
-    },
-    buttonLogin: {
-      height: 50,
-      borderRadius: 25,
-      backgroundColor: "#8d015a",
-      justifyContent: "center",
-      marginTop: 15,
-    },
-    buttonLoginText: {
-      ...TEXT,
-    },
-    action: {
-      flexDirection: "row",
-      justifyContent: "space-between",
-    },
-  });
+    textAlignVertical: "center",
+  },
+  buttonLogin: {
+    height: 50,
+    borderRadius: 25,
+    backgroundColor: "#8d015a",
+    justifyContent: "center",
+    marginTop: 15,
+  },
+  buttonLoginText: {
+    ...TEXT,
+  },
+  action: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+});
