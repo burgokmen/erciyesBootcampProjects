@@ -1,20 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+//import HelloWorld1 from './1-HelloWorld/HelloWorld1';
+//import HelloWorld2 from './1-HelloWorld/HelloWorld2';
+//import TheLight from './2-the-light/TheLight';
+import MomoLogin from "./3-login-page/MomoLogin.js/MomoLogin"
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  //return <HelloWorld1 />
+  //return <HelloWorld2 />
+  //return <TheLight />
+  return <MomoLogin />
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

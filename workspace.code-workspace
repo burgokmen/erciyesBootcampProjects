@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "workspace",
+			"path": ".."
+		},
+		{
+			"path": "../../twitter_clone_bru"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "workspace"
+	}
+}
